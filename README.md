@@ -25,13 +25,6 @@ cd SymbioticAIS
 pip install -r requirements.txt
 ```
 
-## Documentation
-~~For detailed API documentation and guides, refer to the [docs/](docs/) directory.~~
-
-## Contribution
-~~We welcome contributions of all forms, including but not limited to bug fixes, feature enhancements, and documentation improvements. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get started.~~
-
-
 ## Contact
 For any questions or suggestions, please contact us via:
 - Email
