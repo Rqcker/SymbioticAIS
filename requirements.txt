@@ -1,0 +1,4 @@
+numpy
+matplotlib
+flake8
+pytest
