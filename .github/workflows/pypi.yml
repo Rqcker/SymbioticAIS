@@ -1,0 +1,31 @@
+name: pypi
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-and-publish:
+    name: pypi
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install pypa/build
+      run: python -m pip install build
+
+    - name: Build a binary wheel and a source tarball
+      run: python -m build --sdist --wheel --outdir dist/
+
+    - name: Publish distribution to PyPI
+      uses: pypa/gh-action-pypi-publish@v1.4.2
+      with:
+        password: ${{ secrets.PYPI_API_TOKEN }}
