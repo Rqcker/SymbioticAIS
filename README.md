@@ -1,30 +1,65 @@
 # SAIS: Symbiotic Artificial Immune Systems
 
-## Introduction
-SAIS (Symbiotic Artificial Immune Systems) is a novel Artificial Immune System inspired by symbiotic relationships observed in biology. It leverages the three key stages of symbiotic relationships—mutualism, commensalism, and parasitism—for population updating, as seen in the Symbiotic Organisms Search (SOS) algorithm. This approach effectively tackles the challenges associated with large population sizes and enhances population diversity, issues that traditional AIS and SOS algorithms struggle to address efficiently. This project aims to provide an open-source implementation of the SAIS algorithm to foster innovation and research in bio-inspired computing and immune-inspired algorithms.
+![Symbiotic](https://raw.githubusercontent.com/Rqcker/ImageHosting/master/dissertation/symbio3.png)
 
-## Features
-- Innovative population update mechanism inspired by biological symbiosis.
-- Comparable performance to the state-of-the-art SOS algorithm and superior to other popular AIS methods and evolutionary algorithms across 26 benchmark problems.
-- Efficient handling of larger population sizes with fewer generations required.
+### Introduction
+SAIS (Symbiotic Artificial Immune Systems) is a novel Artificial Immune System inspired by symbiotic relationships observed in biology. It leverages the three key stages of symbiotic relationships—mutualism, commensalism, and parasitism—for population updating, as seen in the Symbiotic Organisms Search (SOS) algorithm. This approach effectively tackles the challenges associated with large population sizes and enhances population diversity, issues that traditional AIS and SOS algorithms struggle to address efficiently. This project aims to provide an open-source implementation of the SAIS algorithm to foster innovation and research in bio-inspired computing and immune-inspired algorithms.  [Link to the paper](https://arxiv.org/abs/2402.07244)
 
-## Quick Start
-### Installation
+### Features
+
+- Implementation of the Symbiotic Artificial Immune Systems algorithm.
+- Easy to calculate the objective value of the function.
+- Customizable for different optimisation needs.
+- Support for multiple benchmark functions.
+
+### Quick Start
+
 Ensure the following dependencies are installed on your system:
 - Python 3.x
-- numPy
-- pandas
+- numpy
 
-Installation steps:
+Install `sais` using pip:
+
 ```bash
-git clone https://github.com/Rqcker/SymbioticAIS.git
-cd SymbioticAIS
-pip install -r requirements.txt
+pip install sais
 ```
 
-## Benchmarks List
+Here's a simple example of how to use the SAIS package to optimise a function:
+
+```python
+from sais import run
+
+# define your benchmark number and population size
+population_size = 2000
+# number from Benchmarks List
+benchmark_number = 1
+
+run(population_size, benchmark_number)
 ```
-### Benchmarks
+
+Example outputs:
+```bash
+Starting SAIS for benchmark 1 with population size 2000.
+Iterations Number: 8
+Running Time: 0.18377017974853516 Secounds
+Best Fitness: 4.523554492464579e-10
+Best Antibody: [2.9999822  0.49999976]
+```
+
+How to get the value corresponding to the target point on the function:
+```python
+import numpy as np
+from sais import benchmark_result
+
+
+x = np.random.uniform(np.pi, np.pi, 2)
+y = sais.benchmark_result(x, 2)
+print(x, y)
+```
+
+### Benchmarks List
+```
+### Benchmarks (Name, Range, Global Minimum)
 # F1 = Beale [-4.5; 4.5]; 0
 # F2 = Easom [-100,100]; -1
 # F3 = Matyas [-10,10]; 0
@@ -52,16 +87,19 @@ pip install -r requirements.txt
 # F25 = Griewank [-600,600]; 0
 # F26 = Ackley [-600; 600]; 0
 ```
-## Contact
+
+### SAIS Flowchart
+![Flowchart](https://raw.githubusercontent.com/Rqcker/ImageHosting/master/dissertation/flowchart.png)
+
+### Contact
 For any questions or suggestions, please contact us via:
-- Email
-- GitHub Issue
+- [Email](mailto:junhao.song23@imperial.ac.uk)
+- [GitHub Issue](https://github.com/Rqcker/SymbioticAIS/issues)
 
-## License
-This project is licensed under the [Apache License Version 2.0](LICENSE). Please make sure you understand its terms before using it.
+### License
+This project is licensed under the [CC-BY-4.0 License](LICENSE). Please make sure you understand its terms before using it.
 
-## Citation
-If you use SAIS in your research, please cite our paper:
+### Citation
 ```
 @misc{song2024sais,
       title={SAIS: A Novel Bio-Inspired Artificial Immune System Based on Symbiotic Paradigm}, 
