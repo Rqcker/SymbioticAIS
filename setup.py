@@ -13,7 +13,7 @@ setup(
     url='https://github.com/Rqcker/SymbioticAIS',
     install_requires=[
         # requires list and version
-        'requests>=2.23.0',
+        'numpy>=1.23.5'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -22,5 +22,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
     ],
 )

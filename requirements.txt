@@ -1,4 +1,1 @@
-numpy
-matplotlib
-flake8
-pytest
+numpy>=1.23.5
