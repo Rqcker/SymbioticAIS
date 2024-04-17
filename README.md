@@ -97,7 +97,7 @@ For any questions or suggestions, please contact us via:
 - [GitHub Issue](https://github.com/Rqcker/SymbioticAIS/issues)
 
 ### License
-This project is licensed under the [Apache license 2.0 License](LICENSE). Please make sure you understand its terms before using it.
+This project is licensed under the [Apache license 2.0 License](LICENSE).
 
 ### Citation
 ```
