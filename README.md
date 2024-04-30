@@ -97,7 +97,7 @@ For any questions or suggestions, please contact us via:
 - [GitHub Issue](https://github.com/Rqcker/SymbioticAIS/issues)
 
 ### License
-This project is licensed under the [Apache license 2.0 License](LICENSE).
+This project is licensed under the [Apache License 2.0](LICENSE).
 
 ### Citation
 ```
@@ -110,3 +110,7 @@ This project is licensed under the [Apache license 2.0 License](LICENSE).
       primaryClass={cs.NE}
 }
 ```
+
+### Acknowledgements
+
+We extend our sincere thanks to [Dr. Wei Pang](https://pangwei.eu.org/) for his expert guidance and to [Dr. Yingfang Yuan](https://yuanjames.github.io/) for his pivotal contributions to this project. We also acknowledge Heriot-Watt University and Imperial College London for their support and the academic environment that facilitated our research.
