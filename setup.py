@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='sais',
-    version='0.2.8',
+    version='0.2.9',
     packages=find_packages(),
     description='Symbiotic Artificial Immune Systems',
     long_description=open('README.md').read(),
