@@ -19,8 +19,16 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install pypa/build
-      run: python -m pip install build
+    - name: Install dependencies
+      run: python -m pip install -r requirements.txt
+
+    - name: Prepare build directory
+      run: |
+        rm -rf dist build
+
+    - name: Install pypa/build and twine
+      run: |
+        python -m pip install --upgrade build twine
 
     - name: Build a binary wheel and a source tarball
       run: python -m build --sdist --wheel --outdir dist/
