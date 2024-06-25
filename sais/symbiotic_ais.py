@@ -203,11 +203,11 @@ def run(population_size, benchmark_number):
 
     # update the end time
     end_time = time.time()
-    tol_time = end_time - start_time
+    duration = end_time - start_time
     # result display
-    print('Running Time: %s Secounds' % tol_time)
+    print('Running Time: %s Secounds' % duration)
     print("Best Fitness:", best_fitness)
     print("Best Antibody:", best_antibody)
     # get the best solution
-    return best_antibody, best_fitness, tol_time, \
+    return best_antibody, best_fitness, duration, \
         iterations_number, iteration_results
