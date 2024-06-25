@@ -97,17 +97,15 @@ For any questions or suggestions, please contact us via:
 - [GitHub Issue](https://github.com/Rqcker/SymbioticAIS/issues)
 
 ### License
-This project is licensed under the [Apache License 2.0](LICENSE).
+This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ### Citation
-```
-@misc{song2024sais,
-      title={SAIS: A Novel Bio-Inspired Artificial Immune System Based on Symbiotic Paradigm}, 
-      author={Junhao Song and Yingfang Yuan and Wei Pang},
-      year={2024},
-      eprint={2402.07244},
-      archivePrefix={arXiv},
-      primaryClass={cs.NE}
+```bibtext
+@article{song2024sais,
+  title={SAIS: A Novel Bio-Inspired Artificial Immune System Based on Symbiotic Paradigm},
+  author={Song, Junhao and Yuan, Yingfang and Pang, Wei},
+  journal={arXiv preprint arXiv:2402.07244},
+  year={2024}
 }
 ```
 
