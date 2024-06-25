@@ -11,6 +11,9 @@ setup(
     author='Junhao',
     author_email='junhao.song23@imperial.ac.uk',
     url='https://github.com/Rqcker/SymbioticAIS',
+    project_urls={
+        'Homepage': 'https://github.com/Rqcker/SymbioticAIS',
+    },
     install_requires=[
         # requires list and version
         'numpy>=1.23.5'
