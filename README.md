@@ -3,7 +3,13 @@
 ![Symbiotic](https://raw.githubusercontent.com/Rqcker/ImageHosting/master/dissertation/symbio3.png)
 
 ### Introduction
-SAIS (Symbiotic Artificial Immune Systems) is a novel Artificial Immune System inspired by symbiotic relationships observed in biology. It leverages the three key stages of symbiotic relationships—mutualism, commensalism, and parasitism—for population updating, as seen in the Symbiotic Organisms Search (SOS) algorithm. This approach effectively tackles the challenges associated with large population sizes and enhances population diversity, issues that traditional AIS and SOS algorithms struggle to address efficiently. This project aims to provide an open-source implementation of the SAIS algorithm to foster innovation and research in bio-inspired computing and immune-inspired algorithms.  [Link to the paper](https://arxiv.org/abs/2402.07244)
+SAIS (Symbiotic Artificial Immune Systems) is a novel Artificial Immune System inspired by symbiotic relationships observed in biology. It leverages the three key stages of symbiotic relationships—mutualism, commensalism, and parasitism—for population updating, as seen in the Symbiotic Organisms Search (SOS) algorithm. This approach effectively tackles the challenges associated with large population sizes and enhances population diversity, issues that traditional AIS and SOS algorithms struggle to address efficiently. This project aims to provide an open-source implementation of the SAIS algorithm to foster innovation and research in bio-inspired computing and immune-inspired algorithms.
+
+### Publication
+
+The [paper](https://dl.acm.org/doi/abs/10.1145/3638530.3664188) has been published in the Proceedings of the Genetic and Evolutionary Computation Conference (GECCO '24 Companion).
+
+The [preprint](https://arxiv.org/abs/2402.07244) is available on arXiv.
 
 ### Features
 
@@ -101,10 +107,11 @@ This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ### Citation
 ```bibtext
-@article{song2024sais,
+@inproceedings{song2024sais,
   title={SAIS: A Novel Bio-Inspired Artificial Immune System Based on Symbiotic Paradigm},
   author={Song, Junhao and Yuan, Yingfang and Pang, Wei},
-  journal={arXiv preprint arXiv:2402.07244},
+  booktitle={Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+  pages={2115--2118},
   year={2024}
 }
 ```
