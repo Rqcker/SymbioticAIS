@@ -1,36 +1,40 @@
-# SAIS: Symbiotic Artificial Immune Systems
+## 🧬🤖 SAIS: Symbiotic Artificial Immune Systems
 
-![Symbiotic](https://raw.githubusercontent.com/Rqcker/ImageHosting/master/dissertation/symbio3.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Rqcker/ImageHosting/master/dissertation/symbio3.png" alt="Symbiotic">
+</p>
 
-### Introduction
-SAIS (Symbiotic Artificial Immune Systems) is a novel Artificial Immune System inspired by symbiotic relationships observed in biology. It leverages the three key stages of symbiotic relationships—mutualism, commensalism, and parasitism—for population updating, as seen in the Symbiotic Organisms Search (SOS) algorithm. This approach effectively tackles the challenges associated with large population sizes and enhances population diversity, issues that traditional AIS and SOS algorithms struggle to address efficiently. This project aims to provide an open-source implementation of the SAIS algorithm to foster innovation and research in bio-inspired computing and immune-inspired algorithms. The official Python Package Index (PyPI) [URL](https://pypi.org/project/sais/).
+### 🔬 Introduction
+SAIS (Symbiotic Artificial Immune Systems) is a novel Artificial Immune System inspired by symbiotic relationships observed in biology. It leverages the three key stages of symbiotic relationships—mutualism, commensalism, and parasitism—for population updating, as seen in the Symbiotic Organisms Search (SOS) algorithm. This approach effectively tackles the challenges associated with large population sizes and enhances population diversity, issues that traditional AIS and SOS algorithms struggle to address efficiently. This project aims to provide an open-source implementation of the SAIS algorithm to foster innovation and research in bio-inspired computing and immune-inspired algorithms.
 
-### Publication
+📦 **Official Python Package Index (PyPI) Package: [SAIS](https://pypi.org/project/sais/)**.
 
-The [paper](https://dl.acm.org/doi/abs/10.1145/3638530.3664188) has been published in the Proceedings of the Genetic and Evolutionary Computation Conference (GECCO '24 Companion).
+### 🏆 Publication
 
-The [preprint](https://arxiv.org/abs/2402.07244) is available on arXiv.
+📚 The [paper](https://dl.acm.org/doi/abs/10.1145/3638530.3664188) has been published in the '[**ACM Proceedings of the Genetic and Evolutionary Computation Conference (GECCO '24 Companion)**](https://dl.acm.org/conference/gecco)'🎉.
 
-### Features
+🎊 The [preprint](https://arxiv.org/abs/2402.07244) is available on arXiv.
+
+### ⚙️ Features
 
 - Implementation of the Symbiotic Artificial Immune Systems algorithm.
 - Easy to calculate the objective value of the function.
 - Customizable for different optimisation needs.
 - Support for multiple benchmark functions.
 
-### Quick Start
+### 🚀 Quick Start
 
 Ensure the following dependencies are installed on your system:
 - Python 3.x
 - numpy
 
-Install `sais` using pip:
+📥 Install `sais` using pip:
 
 ```bash
 pip install sais
 ```
 
-Here's a simple example of how to use the SAIS package to optimise a function:
+🔥 Example usage, here’s how to use SAIS to optimise a function:
 
 ```python
 from sais import run
@@ -43,7 +47,7 @@ benchmark_number = 1
 run(population_size, benchmark_number)
 ```
 
-Example outputs:
+📌 Example output:
 ```bash
 Starting SAIS for benchmark 1 with population size 2000.
 Iterations Number: 8
@@ -52,7 +56,7 @@ Best Fitness: 4.523554492464579e-10
 Best Antibody: [2.9999822  0.49999976]
 ```
 
-How to get the value corresponding to the target point on the function:
+🎯 Function evaluation, get the function’s value at a given point:
 ```python
 import numpy as np
 from sais import benchmark_result
@@ -63,7 +67,7 @@ y = sais.benchmark_result(x, 2)
 print(x, y)
 ```
 
-### Benchmarks List
+### 📊 Benchmark Functions
 ```
 ### Benchmarks (Name, Range, Global Minimum)
 # F1 = Beale [-4.5; 4.5]; 0
@@ -94,18 +98,24 @@ print(x, y)
 # F26 = Ackley [-600; 600]; 0
 ```
 
-### SAIS Flowchart
-![Flowchart](https://raw.githubusercontent.com/Rqcker/ImageHosting/master/dissertation/flowchart.png)
+### 🔄 SAIS Flowchart
 
-### Contact
+<details>
+  <summary>📌 Click to expand the flowchart.</summary>
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/Rqcker/ImageHosting/master/dissertation/flowchart.png" alt="Flowchart">
+  </p>
+</details>
+
+### 📬 Contact
 For any questions or suggestions, please contact us via:
-- [Email](mailto:junhao.song23@imperial.ac.uk)
-- [GitHub Issue](https://github.com/Rqcker/SymbioticAIS/issues)
+- 🔬 [The Bio-inspired Computing and Machine Learning (BCML) Lab](https://bioml.eu.org/).
+- 🐛 [GitHub Issues](https://github.com/Rqcker/SymbioticAIS/issues).
 
-### License
+### 📜 License
 This project is licensed under the [Apache 2.0 License](LICENSE).
 
-### Citation
+### 🔖 Citation
 ```bibtext
 @inproceedings{song2024sais,
   title={SAIS: A Novel Bio-Inspired Artificial Immune System Based on Symbiotic Paradigm},
@@ -116,6 +126,6 @@ This project is licensed under the [Apache 2.0 License](LICENSE).
 }
 ```
 
-### Acknowledgements
+### 🎓 Acknowledgements
 
-We extend our sincere thanks to [Dr. Wei Pang](https://pangwei.eu.org/) for his expert guidance and to [Dr. Yingfang Yuan](https://yuanjames.github.io/) for his pivotal contributions to this project. We also acknowledge Heriot-Watt University and Imperial College London for their support and the academic environment that facilitated our research.
+We extend our sincere thanks to 🏛️ **[Imperial College London](https://www.imperial.ac.uk/) & [Heriot-Watt University](https://www.hw.ac.uk/)** for their support and the academic environment that facilitated our research.
