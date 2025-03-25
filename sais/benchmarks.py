@@ -228,6 +228,38 @@ def benchmark_result(x, benchmark_number):
             s2 += np.cos(c * x[i])
         y = -a * np.exp(-b * np.sqrt(1 / n * s1)) \
             - np.exp(1 / n * s2) + a + np.exp(1)
+
+    elif benchmark_number == 27:
+        # DC OPF with 2 variables: theta2 and
+        # theta3 (theta1 is fixed at 0)
+        theta2, theta3 = x[0], x[1]
+        # Compute power flows
+        # (X = 0.5 so f = (theta_i - theta_j)/0.5
+        # = 2*(theta_i - theta_j))
+        f12 = 2*(0 - theta2)   # = -2*theta2
+        f13 = 2*(0 - theta3)   # = -2*theta3
+        f23 = 2*(theta2 - theta3)
+
+        # Power balance:
+        G1 = f12 + f13           # Bus 1
+        G2 = 300 + (-f12 + f23)  # Bus 2
+        G3 = (-f13 - f23)        # Bus 3
+
+        # Constraint check:
+        constraint_violated = False
+        if abs(f12) > 200 or abs(f13) > 200 or abs(f23) > 50:
+            constraint_violated = True
+        if G1 < 0 or G2 < 0 or G3 < 0:
+            constraint_violated = True
+
+        # Objective: total generation cost
+        cost = 20 * G1 + 30 * G2 + 100 * G3
+
+        # If any constraint is violated, add a large penalty.
+        if constraint_violated:
+            y = cost + 1e6
+        else:
+            y = cost
     return y
 
 
@@ -454,6 +486,13 @@ def terminate(benchmark_number):
         Lb = np.ones(nd) * Lb
         Ub = np.ones(nd) * Ub
         globalMin = 0
+        globalMin += Tol
+
+    elif benchmark_number == 27:
+        nd = 2  # theta2, theta3
+        Lb = np.array([-60, -60])  # angle lower bounds
+        Ub = np.array([-20, -20])  # angle upper bounds
+        globalMin = 7500  # global minimum cost
         globalMin += Tol
 
     return globalMin, Lb, Ub, nd, max_limit
