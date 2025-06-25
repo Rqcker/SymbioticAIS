@@ -1,5 +1,14 @@
 ## 🧬🤖 SAIS: Symbiotic Artificial Immune Systems
 
+<p align="left">
+  <a href="https://dl.acm.org/doi/abs/10.1145/3638530.3664188"><img src="https://img.shields.io/badge/ACM%20GECCO-2024-orange?logo=acm" alt="ACM Paper"></a>
+  <a href="https://arxiv.org/abs/2402.07244"><img src="https://img.shields.io/badge/arXiv-2402.07244-b31b1b.svg?logo=arxiv" alt="arXiv"></a>
+  <a href="https://pypi.org/project/sais/"><img src="https://img.shields.io/pypi/v/sais.svg?color=blue" alt="PyPI version"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.8%2B-blue.svg?logo=python" alt="Python 3.8+"></a>
+  <a href="https://github.com/Rqcker/SymbioticAIS/actions/workflows/flake8.yml"><img src="https://img.shields.io/badge/code%20style-flake8-brightgreen.svg?logo=python" alt="flake8"></a>
+  <a href="http://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/Rqcker/SymbioticAIS.svg" alt="License"></a>
+</p>
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Rqcker/ImageHosting/master/dissertation/symbio3.png" alt="Symbiotic">
 </p>
@@ -34,7 +43,7 @@ Ensure the following dependencies are installed on your system:
 pip install sais
 ```
 
-🔥 Example usage, here’s how to use SAIS to optimise a function:
+🔥 Example usage, here's how to use SAIS to optimise a function:
 
 ```python
 from sais import run
@@ -56,7 +65,7 @@ Best Fitness: 4.523554492464579e-10
 Best Antibody: [2.9999822  0.49999976]
 ```
 
-🎯 Function evaluation, get the function’s value at a given point:
+🎯 Function evaluation, get the function's value at a given point:
 ```python
 import numpy as np
 from sais import benchmark_result
@@ -96,6 +105,7 @@ print(x, y)
 # F24 = Rastrigin [-5.12; 5.12];
 # F25 = Griewank [-600,600]; 0
 # F26 = Ackley [-600; 600]; 0
+# F27 = UserCustom [-60; -20]; 7500
 ```
 
 ### 🔄 SAIS Flowchart
@@ -116,7 +126,7 @@ For any questions or suggestions, please contact us via:
 This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ### 🔖 Citation
-```bibtext
+```bibtex
 @inproceedings{song2024sais,
   title={SAIS: A Novel Bio-Inspired Artificial Immune System Based on Symbiotic Paradigm},
   author={Song, Junhao and Yuan, Yingfang and Pang, Wei},
